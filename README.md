@@ -24,7 +24,8 @@ Starts a new incident response.
 If the channel is in use, irbot will suggest a second one.
 
     <elvis> !ir Stove is busted
-    <irbot> #ir is currently reserved for "[IR-27] Site is down". Please join #ir2 or resolve the current incident.
+    <irbot> #ir is currently reserved for "[IR-27] Site is down".
+            Please join #ir2 or first resolve the current incident.
 
 ### !topic new-topic
 
@@ -60,7 +61,8 @@ Provides a status update to end users.
 
 Periodically irbot will prompt for an update.
 
-    <irbot> Status was updated 30 minutes ago, please update with !status if the situation has changed. "We are investigating the problem."
+    <irbot> Status was updated 30 minutes ago, please update with !status if the situation
+            has changed. "We are investigating the problem."
 
 ### !nextupdate time
 
@@ -76,4 +78,6 @@ Mark the incident as resolved. The IC will be reminded to complete an incident r
 
     <sam> !resolve
     * irbot changed the topic of #ir: No active incident | Previous: https://status.example.org/ir/27
-    <irbot> sam: Please complete the incident report or transfer IC at https://status.example.org/ir/27/report. I will remind you by email in one day.
+    <irbot> sam: Please complete the incident report or transfer IC responsibilities
+            at https://status.example.org/ir/27/report. I will remind you by email in
+            one day.
