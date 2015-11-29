@@ -4,9 +4,12 @@ Incident Room
 **Status:** Incomplete (unusable)
 
 Incident Room is a combination status website and IRC bot which makes
-communication easier during incident response. It provides a placeto
-display status updates to end users and a sitrep page including chat
-history to get newly arriving responders up to speed quickly.
+communication easier during incident response. It provides:
+
+* guided incident workflow centred on an IRC channel
+* status page for end users
+* sitrep page including chat history for responders
+* prompts to complete updates and reports
 
 IRC Commands
 ------------
@@ -32,7 +35,7 @@ Renames the current incident.
 
 ### !invite user1 msg
 
-Invite's a responder to the incident room.
+Invites a responder to the incident room.
 
     <sam> !invite penny Looks like a db problem. Can you give me hand?
     <irbot> Email sent.
@@ -54,6 +57,10 @@ Provides a status update to end users.
 
     <sam> !status A workaround is in place and the site's online but slow. Work
                   on adressing the root cause is continuing.
+
+Periodically irbot will prompt for an update.
+
+    <irbot> Status was updated 30 minutes ago, please update with !status if the situation has changed. "We are investigating the problem."
 
 ### !nextupdate time
 
